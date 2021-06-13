@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background: #161722;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.header {
+  background-image: url("image/bg-mobile-dark.jpg");
+  background-size: cover;
+  position: relative;
+  bottom: 1.3pc;
+  width: 24pc;
+  height: 12pc;
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+}
+
+.header h1 {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 10px;
+  margin: 3.6pc 0 0 25px;
+}
+
+.header img {
+  position: relative;
+  left: 44%;
+  cursor: pointer;
+}
+
+.header h1, .header img {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 2.7pc;
+}
+
+.header .itemIn {
+  margin: 20px 0 0 28px;
+  border: none;
+  outline: none;
+  padding: 15px 6.5pc 15px 3.3pc;
+  border-radius: 5px;
+  background: #282a3e;
+  caret-color: #3a7bfd;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: url("image/BR.png");
+  background-repeat: no-repeat;
+  background-position: 12px 9px;
+  background-blend-mode: overlay;
+}
+
+.items-container {
+  background: #25273c;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 89%;
+  margin: 18px 0 0 22px;
+  -webkit-transform: translateY(-3.8pc);
+          transform: translateY(-3.8pc);
+  border-radius: 5px;
+  /*li p::before {
+          border: 1px solid rgba(255, 255, 255, 0.383);
+          border-radius: 50%;
+          padding: 10px 10px 10px 10px;
+          cursor: pointer;
+          position: absolute;
+          top: -2.9px;
+          left: -2.2pc;
+          //content: url('image/icon-check.svg');
+          content: "";
+        
+          //background: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        }*/
+}
+
+.items-container li {
+  list-style: none;
+  padding: 15px 0 20px 20px;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.233);
+  color: white;
+  font-size: 18px;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.items-container .circle {
+  position: relative;
+  top: 4px;
+  right: .3pc;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: .2;
+}
+
+.items-container .element {
+  position: relative;
+  bottom: .2pc;
+  left: 7px;
+  font-size: 15px;
+  font-weight: 300;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.items-container .deleteBtn {
+  float: right;
+  -webkit-transform: translate(-1.5pc, 10px);
+          transform: translate(-1.5pc, 10px);
+  cursor: pointer;
+}
+
+.counterAndClear {
+  padding: 1px 0 18px 0;
+  margin-top: 20px;
+  display: none;
+}
+
+.counterAndClear span {
+  color: rgba(255, 255, 255, 0.342);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0 0 20px 15px;
+}
+
+.ClearBtn {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.342);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  float: right;
+  position: relative;
+  bottom: 2.2pc;
+  right: 1pc;
+  cursor: pointer;
+  display: none;
+}
+
+.show-content {
+  visibility: visible;
+}
+
+.options {
+  background: #25273c;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 89%;
+  margin-left: 21px;
+  -webkit-transform: translateY(-2.7pc);
+          transform: translateY(-2.7pc);
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.options button {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: silver;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 2.2pc;
+  position: relative;
+  left: 10%;
+  padding: 15px 0;
+}
+
+.options button:hover {
+  color: #a09c9c;
+}
+
+.options button:focus {
+  color: #3266cd;
+}
+
+.check {
+  background: -webkit-gradient(linear, left top, left bottom, from(#57ddff), to(#c058f3));
+  background: linear-gradient(#57ddff, #c058f3);
+  padding: 8px;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  right: .3pc;
+  cursor: pointer;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  opacity: .4;
+}
+
+.lightInput {
+  margin: 20px 0 0 25px;
+  border: none;
+  outline: none;
+  padding: 15px 6.5pc 15px 3.3pc;
+  border-radius: 5px;
+  background: #fafafa;
+  caret-color: #3a7bfd;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: url("image/BR2.png");
+  background-repeat: no-repeat;
+  background-position: 16px 10px;
+}
+
+.lightList {
+  background: #fafafa;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 89%;
+  margin: 18px 0 0 18px;
+  -webkit-transform: translateY(-3.8pc);
+          transform: translateY(-3.8pc);
+  border-radius: 5px;
+}
+
+.lightList ul {
+  list-style: none;
+  /*li p::before {
+          border: 1px solid rgba(255, 255, 255, 0.383);
+          border-radius: 50%;
+          padding: 10px 10px 10px 10px;
+          cursor: pointer;
+          position: absolute;
+          top: -2.9px;
+          left: -2.2pc;
+          //content: url('image/icon-check.svg');
+          content: "";
+        
+          //background: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        }*/
+}
+
+.lightList ul li {
+  padding: 15px 0 20px 20px;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.623);
+  color: rgba(0, 0, 0, 0.603);
+  font-size: 18px;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.lightList ul .circle {
+  position: relative;
+  top: 4px;
+  right: .3pc;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.lightList ul .text {
+  position: relative;
+  bottom: .2pc;
+  left: 7px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.lightList ul .deleteBtn {
+  float: right;
+  -webkit-transform: translate(-1.5pc, 10px);
+          transform: translate(-1.5pc, 10px);
+  cursor: pointer;
+}
+
+.lightList .counterAndClear {
+  padding: 1px 0 18px 0;
+  margin-top: 20px;
+  display: none;
+}
+
+.lightList .counterAndClear span {
+  color: rgba(0, 0, 0, 0.534);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0 0 20px 15px;
+}
+
+.lightList .ClearBtn {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 0.534);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  float: right;
+  position: relative;
+  top: 10pc;
+  right: 1pc;
+  cursor: pointer;
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

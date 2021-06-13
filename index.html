@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="container dark">
+        <div class="header">
+            <h1 class="Title">TODO</h1>
+            <img src="image/icon-sun.svg" alt="Sun" id="dark_mode">
+            <input type="text" class="itemIn" placeholder="Create a new todo...">
+        </div>
+        <div class="items-container">
+            <div class="items-list">
+                <!--<ul class="items-list">
+                    <li>
+                        <p class="It">
+                            <img src="image/BR.png" class="circle It">
+                            <span class="element">item</span> 
+                            <img src="image/icon-cross.svg" id="deleteBtn">  
+                        </p>                  
+                    </li>  
+                </ul>-->  
+                </div>
+            <div class="counterAndClear"></div>
+            <button class="ClearBtn">Clear Completed</button>
+        </div>
+    </div>
+    <div class="options">
+        <button class="btn" data-id="All">All</button>
+        <button class="btn" data-id="Active">Active</button>
+        <button class="btn" data-id="Completed">Completed</button>
+    </div>
+    <p class="Alert"></p>
+        <!--<img src="image/icon-check.svg" class="check">-->
+    <!--Script-->
+    <script src="app.js"></script>
+</body>
+</html>

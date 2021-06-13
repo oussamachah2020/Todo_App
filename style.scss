@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    box-sizing: inherit;
+}
+
+body {
+  background: hsl(235, 21%, 11%);
+  transition: .4s ease;
+}
+
+.header {
+  background-image: url('image/bg-mobile-dark.jpg');
+  background-size: cover;
+  position: relative;
+  bottom: 1.3pc;
+  width: 24pc;
+  height: 12pc;
+  transform: translateX(-8px);
+
+  h1 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 10px;
+    margin: 3.6pc 0 0 25px;
+  }
+
+  img {
+    position: relative;
+    left: 44%;
+    cursor: pointer;
+  }
+
+  h1,img {
+    display: inline-flex;
+    margin-top: 2.7pc;
+  }
+
+  .itemIn {
+    margin: 20px 0 0 28px;
+    border: none;
+    outline: none;
+    padding: 15px 6.5pc 15px 3.3pc;
+    border-radius: 5px;
+    background: hsl(235, 22%, 20%);
+    caret-color:   hsl(220, 98%, 61%);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-image: url('image/BR.png');
+    background-repeat: no-repeat;
+    background-position: 12px 9px;
+    background-blend-mode: overlay;
+  }
+}
+
+.items-container {
+  background: hsl(235, 24%, 19%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 89%;
+  margin: 18px 0 0 22px;
+  transform: translateY(-3.8pc);
+  border-radius: 5px;
+  //visibility: hidden;
+  
+        li {
+          list-style: none;
+          padding: 15px 0 20px 20px;
+          border-bottom: 1px solid rgba(192, 192, 192, 0.233);
+          color: white;
+          font-size: 18px;
+          position: relative;
+          font-family: 'Josefin Sans', sans-serif;
+        }
+  
+        /*li p::before {
+          border: 1px solid rgba(255, 255, 255, 0.383);
+          border-radius: 50%;
+          padding: 10px 10px 10px 10px;
+          cursor: pointer;
+          position: absolute;
+          top: -2.9px;
+          left: -2.2pc;
+          //content: url('image/icon-check.svg');
+          content: "";
+        
+          //background: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        }*/
+  
+        .circle {
+          position: relative;
+          top: 4px;
+          right: .3pc;
+          cursor: pointer;
+          //background:linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+          border-radius: 50%;
+          opacity: .2;
+        }
+  
+        .element {
+          position: relative;
+          bottom: .2pc;
+          left: 7px;
+          font-size: 15px;
+          font-weight: 300;
+          user-select: none;
+        }
+  
+  
+      .deleteBtn {
+        float: right;
+        transform: translate(-1.5pc,10px);
+        cursor: pointer;
+      }
+}
+
+  .counterAndClear {
+    padding: 1px 0 18px 0;
+    margin-top: 20px;
+    display: none;
+
+    span {
+      color: rgba(255, 255, 255, 0.342);
+      font-family: 'Josefin Sans', sans-serif;
+      padding: 0 0 20px 15px;
+    }
+  }
+
+.ClearBtn {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.342);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  float: right;
+  position: relative;
+  bottom: 2.2pc;
+  right: 1pc;
+  cursor: pointer;
+  display: none;
+}
+
+.show-content {
+  visibility: visible;
+}
+
+.options {
+  background: hsl(235, 24%, 19%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 89%;
+  margin-left: 21px;
+  transform: translateY(-2.7pc);
+  border-radius: 5px;
+  display: inline-flex;
+
+  button {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: silver;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 2.2pc;
+    position: relative;
+    left: 10%;
+    padding: 15px 0;
+  }
+
+  button:hover {
+    color: hsl(0, 2%, 62%);
+  }
+
+  button:focus {
+    color:hsl(220, 61%, 50%);
+  }
+}
+
+
+.check {
+  background: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+  padding: 8px;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  right: .3pc;
+  cursor: pointer;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  opacity: .4;
+}
+
+.lightInput {
+  margin: 20px 0 0 25px;
+  border: none;
+  outline: none;
+  padding: 15px 6.5pc 15px 3.3pc;
+  border-radius: 5px;
+  background: hsl(0, 0%, 98%);
+  caret-color:   hsl(220, 98%, 61%);
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: url('image/BR2.png');
+  background-repeat: no-repeat;
+  background-position: 16px 10px;
+  //background-blend-mode: overlay;
+}
+
+.lightList {
+  background: hsl(0, 0%, 98%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 89%;
+  margin: 18px 0 0 18px;
+  transform: translateY(-3.8pc);
+  border-radius: 5px;
+
+    ul {
+      list-style: none;
+  
+        li {
+          padding: 15px 0 20px 20px;
+          border-bottom: 1px solid rgba(192, 192, 192, 0.623);
+          color: rgba(0, 0, 0, 0.603);
+          font-size: 18px;
+          position: relative;
+          font-family: 'Josefin Sans', sans-serif;
+  
+          user-select: none;
+        }
+  
+        /*li p::before {
+          border: 1px solid rgba(255, 255, 255, 0.383);
+          border-radius: 50%;
+          padding: 10px 10px 10px 10px;
+          cursor: pointer;
+          position: absolute;
+          top: -2.9px;
+          left: -2.2pc;
+          //content: url('image/icon-check.svg');
+          content: "";
+        
+          //background: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        }*/
+  
+        .circle {
+          position: relative;
+          top: 4px;
+          right: .3pc;
+          cursor: pointer;
+          //background:linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+          border-radius: 50%;
+          opacity: 1;
+        }
+  
+        .text {
+          position: relative;
+          bottom: .2pc;
+          left: 7px;
+          font-size: 15px;
+          font-weight: 300;
+        }
+
+        .deleteBtn {
+          float: right;
+          transform: translate(-1.5pc,10px);
+          cursor: pointer;
+        }
+    }
+
+    .counterAndClear {
+      padding: 1px 0 18px 0;
+      margin-top: 20px;
+      display: none;
+  
+      span {
+        color: rgba(0, 0, 0, 0.534);
+        font-family: 'Josefin Sans', sans-serif;
+        padding: 0 0 20px 15px;
+      }
+    }
+  
+  .ClearBtn {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 0.534);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    float: right;
+    position: relative;
+    top: 10pc;
+    right: 1pc;
+    cursor: pointer;
+    display: none;
+  }
+}
+
